@@ -15,3 +15,5 @@ require_once( JST_INC_PATH . '/front.php');
 
 // Register settings page
 require_once( JST_INC_PATH . '/settings.php');
+
+?>

@@ -14,4 +14,3 @@ function jst_register_assets() {
 add_action('wp_enqueue_scripts', 'jst_register_assets');
 
 ?>
-
