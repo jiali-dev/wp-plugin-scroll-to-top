@@ -6,7 +6,7 @@ if (!defined('ABSPATH')) exit;
 // Hook to add the Scroll to Top button and enqueue scripts/styles
 function jst_scroll_to_top_layout() {
     // HTML for Scroll to Top button
-    echo '<a id="back2Top" class="top-scroll" title="' . esc_attr__('Back to top', 'jst-custom-plugin') . '" href="#">
+    echo '<a id="jst-scroll-to-top" class="top-scroll" title="' . esc_attr__('Back to top', 'jst-custom-plugin') . '" href="#">
             <i class="ti-arrow-up"></i>
           </a>';
 
