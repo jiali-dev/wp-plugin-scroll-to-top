@@ -13,6 +13,9 @@
  */
 
 
+ // Exit if accessed directly
+if (!defined('ABSPATH')) exit;
+
 // Add functions
 require_once( plugin_dir_path(__FILE__) . '/inc/functions.php' );
 
