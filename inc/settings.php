@@ -79,22 +79,22 @@ add_action('admin_init', 'jialistt_register_settings');
 // Field Callbacks
 function jialistt_button_bg_callback() {
     $value = esc_attr(get_option('jialistt_button_bg', '#333c56'));
-    echo '<input type="text" id="jialistt_button_bg" class="jialistt-color-field" name="jialistt_button_bg" value="' . $value . '">';
+    echo '<input type="text" id="jialistt_button_bg" class="jialistt-color-field" name="jialistt_button_bg" value="' . esc_attr($value) . '">';
 }
 
 function jialistt_button_color_callback() {
     $value = esc_attr(get_option('jialistt_button_color', '#fff'));
-    echo '<input type="text" id="jialistt_button_color" class="jialistt-color-field" name="jialistt_button_color" value="' . $value . '">';
+    echo '<input type="text" id="jialistt_button_color" class="jialistt-color-field" name="jialistt_button_color" value="' . esc_attr($value) . '">';
 }
 
 function jialistt_button_size_callback() {
     $value = esc_attr(get_option('jialistt_button_size', '40'));
-    echo '<input type="number" name="jialistt_button_size" value="' . $value . '" >';
+    echo '<input type="number" name="jialistt_button_size" value="' . esc_attr($value) . '" >';
 }
 
 function jialistt_font_size_callback() {
     $value = esc_attr(get_option('jialistt_font_size', '15'));
-    echo '<input type="number" name="jialistt_font_size" value="' . $value . '" >';
+    echo '<input type="number" name="jialistt_font_size" value="' . esc_attr($value) . '" >';
 }
 
 function jialistt_position_callback() {
@@ -109,12 +109,12 @@ function jialistt_position_callback() {
 
 function jialistt_bottom_distance_callback() {
     $value = esc_attr(get_option('jialistt_bottom_distance', '10'));
-    echo '<input type="number" name="jialistt_bottom_distance" value="' . $value . '" min="0">';
+    echo '<input type="number" name="jialistt_bottom_distance" value="' . esc_attr($value) . '" min="0">';
 }
 
 function jialistt_side_distance_callback() {
     $value = esc_attr(get_option('jialistt_side_distance', '20'));
-    echo '<input type="number" name="jialistt_side_distance" value="' . $value . '" min="0">';
+    echo '<input type="number" name="jialistt_side_distance" value="' . esc_attr($value) . '" min="0">';
 }
 
 function jialistt_shape_callback() {
