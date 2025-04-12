@@ -9,7 +9,7 @@ function jialistt_scroll_to_top_layout() {
     $title = esc_attr__( 'Back to top', 'jiali-scroll-to-top-button' );
     $href  = esc_url( '#' );
 
-    echo '<a id="jialistt-scroll-to-top" class="top-scroll" title="' . $title . '" href="' . $href . '">
+    echo '<a id="jialistt-scroll-to-top" class="top-scroll" title="' . esc_attr($title) . '" href="' . esc_attr($href) . '">
             <span>&uarr;</span>
           </a>';
 
