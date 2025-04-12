@@ -8,12 +8,12 @@ require_once( plugin_dir_path(__FILE__) . 'define_constants.php' );
 
 
 // Register theme assets
-require_once( JST_INC_PATH . '/register_assets.php');
+require_once( JIALISTT_INC_PATH . '/register_assets.php');
 
 // Register front view
-require_once( JST_INC_PATH . '/front.php');
+require_once( JIALISTT_INC_PATH . '/front.php');
 
 // Register settings page
-require_once( JST_INC_PATH . '/settings.php');
+require_once( JIALISTT_INC_PATH . '/settings.php');
 
 ?>
